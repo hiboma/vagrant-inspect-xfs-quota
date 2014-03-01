@@ -9,7 +9,7 @@ $ vagrant plugin install vagrant-persistent-storage
 $ vagrant up
 ```
 
-#### Block quota is set
+## Block quota is set
 
 ```
 [vagrant@vagrant-centos65 ~]$ sudo xfs_quota -x -c 'report'
@@ -28,7 +28,7 @@ A sample one-line script which block quota (write(2) returns ENOSPC)
 dd: writing `/mnt/xfs/blockquota.dd': No space left on device
 ```
 
-#### Inode quota is set
+## Inode quota is set
 
 ```
 [vagrant@vagrant-centos65 ~]$ sudo xfs_quota -x -c 'report -i'
